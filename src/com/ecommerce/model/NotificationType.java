@@ -1,0 +1,15 @@
+package com.ecommerce.model;
+
+public enum NotificationType {
+
+    ORDER_PLACED,
+    PAYMENT_SUCCESS,
+    PAYMENT_FAILED,
+    ORDER_CONFIRMED,
+    ORDER_SHIPPED,
+    ORDER_DELIVERED,
+    ORDER_CANCELLED,
+    RETURN_REQUESTED,
+    REFUND_PROCESSED,
+    LOW_STOCK
+}

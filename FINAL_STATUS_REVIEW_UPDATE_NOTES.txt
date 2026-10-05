@@ -1,0 +1,28 @@
+SAIVEE FINAL STATUS + REVIEW EMAIL UPDATE
+
+1. Admin order status control
+- Admin can now select any OrderStatus directly from the status selector.
+- The previous sequential transition validation in the admin update path has been removed.
+- Customer return/refund validation remains handled by the dedicated return flow.
+
+2. Delivered email
+- The ORDER DELIVERED email now includes a professional review invitation.
+- It explains that ratings and written reviews are available after delivery.
+- It explains that reviews are saved to the shopping catalogue and limited to purchased products.
+
+3. Review emails
+- Review submission confirmation email remains enabled.
+- Admin reply email remains enabled and uses the professional SAIVEE HTML template.
+- Admin replies remain stored with the review and displayed with the product review.
+
+4. Existing features preserved
+- OTP/email verification
+- Payment simulation and transaction IDs
+- Customer order history
+- Notification history/read state
+- Returns and refunds
+- Professional event emails
+- Ratings/reviews/catalogue display
+- Existing checkout/inventory/admin functionality
+
+Compilation verified successfully with javac.

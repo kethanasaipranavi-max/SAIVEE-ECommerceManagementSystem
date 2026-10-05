@@ -1,0 +1,8 @@
+SAIVEE Return / Cancellation update
+
+- Delivered orders offer Request Return. Orders in PLACED, CONFIRMED, or PROCESSING can be cancelled before shipping.
+- Return request sends an email/in-app message with pickup handover guidance and COD refund next-step wording.
+- Cancellation email explains refund handling for prepaid payments and clarifies COD is not collected before delivery.
+- Return requests are customer requests; admin review/inspection is still required before a refund is marked processed.
+
+Important limitation: this desktop project does not connect to a bank/payment gateway for actual transfers and does not collect/verify bank account details. Email language therefore says refund will be initiated/eligible and COD bank details will be coordinated, not that money has already been transferred. Configure a real payment/refund provider before treating transfers as automated.

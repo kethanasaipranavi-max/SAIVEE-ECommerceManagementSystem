@@ -1,0 +1,26 @@
+SAIVEE FINAL UPGRADE
+
+Preserved existing checkout, COD, inventory reservation, order processing, catalog, admin and in-app notifications.
+
+Added:
+- Email OTP verification for new customer registration.
+- Persistent customer order history keyed to customer email/user ID; loaded at startup.
+- Persistent notification history with unread/read state.
+- Simulated Card / UPI / Net Banking / COD transaction ledger with transaction IDs.
+- Professional event-based email templates for order/payment/shipping/delivery/cancellation/return/refund.
+- Advanced return workflow: request -> pickup scheduled -> picked up -> inspection -> approved/rejected -> refund processing/refunded.
+- Customer-side return request and return-status view.
+- Admin-side return workflow controls.
+- Persistent ratings/reviews, displayed in the shopping catalogue.
+- Verified-purchase review restriction after delivery.
+- Email confirmation when a review is submitted.
+- Admin can reply to reviews; reply is emailed to customer and saved with the review.
+- Fixed Admin Remove Stock double-decrement bug: entering 4 now removes exactly 4.
+
+Real-world limitation:
+This is a desktop simulation. It does not connect to a real bank, UPI provider, card network, courier, or payment gateway. Refund emails describe the realistic process and use simulated transaction/refund references; they do not claim an actual bank transfer occurred.
+
+Build:
+javac -encoding UTF-8 -d out (Get-ChildItem .\src -Recurse -Filter *.java | ForEach-Object { $_.FullName })
+Run:
+java -cp out com.ecommerce.Main

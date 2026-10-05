@@ -1,0 +1,19 @@
+SAIVEE PROFESSIONAL EMAIL UPGRADE
+
+- Professional responsive HTML email templates
+- Rich ORDER_PLACED confirmation with order summary
+- PDF invoice attachment for order confirmation
+- Plain-text fallback for mail clients
+- Sent / Failed / Pending email-status.csv tracking
+- Temporary SMTP retry
+- Recipient email validation
+- Existing in-app notifications, checkout, stock, payment and order flows preserved
+
+Run:
+javac -encoding UTF-8 -d out (Get-ChildItem .\\src -Recurse -Filter *.java | ForEach-Object { $_.FullName })
+java -cp out com.ecommerce.Main
+
+Additional requested behavior update:
+- Customer Returns / Cancellation offers a return request for delivered orders.
+- Cancellation remains available for eligible pre-shipment orders; other states explain why no action is available.
+- Declined/cancelled payment releases the cart stock reservation and closes the payment window without sending a payment-failure email or showing a success/receipt confirmation.
